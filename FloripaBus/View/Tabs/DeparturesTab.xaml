@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FloripaBus.View.Tabs.DeparturesTab"
+             xmlns:CustomViews="clr-namespace:FloripaBus.View.CustomViews;assembly=FloripaBus"
+             Title="{Binding Title}">
+
+  <ScrollView>
+    <StackLayout>
+      <ActivityIndicator IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}" HorizontalOptions="Center"/>
+
+      <StackLayout VerticalOptions="Start" IsVisible="{Binding ShowData}">
+
+        <Frame Padding="10">
+          <Label Text="Tap a day to show or hide departures:"/>
+        </Frame>
+
+        <CustomViews:DeparturesView Header="Weekdays" Departures="{Binding Weekdays}" Columns="4" Padding="10"/>
+        <CustomViews:DeparturesView Header="Saturdays" Departures="{Binding Saturdays}" Columns="4" Padding="10"/>
+        <CustomViews:DeparturesView Header="Sundays" Departures="{Binding Sundays}" Columns="4" Padding="10"/>
+      </StackLayout>
+
+    </StackLayout>
+
+  </ScrollView>
+
+</ContentPage>

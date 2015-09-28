@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FloripaBus.View.CustomViews.DeparturesView">
+  <ContentView.Content>
+
+    <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+      <Label x:Name="HeaderLabel" VerticalOptions="Center" FontSize="Medium"/>
+      <Label x:Name="MessageLabel" IsVisible="False"/>
+      <Grid x:Name="Grid" HorizontalOptions="FillAndExpand" IsVisible="False"/>
+    </StackLayout>
+
+  </ContentView.Content>
+</ContentView>
