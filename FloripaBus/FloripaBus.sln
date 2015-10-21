@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloripaBus", "FloripaBus.csproj", "{4CD9F514-6EF2-49CF-8534-E700FC5CE3D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloripaBus.Droid", "Droid\FloripaBus.Droid.csproj", "{124D64A5-30FD-4121-81F2-22DA051B5961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloripaBusService", "..\FloripaBusService\FloripaBusService.csproj", "{FC7BCD79-29F6-406E-9C2C-6C657DD79905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloripaBusService.Tests", "..\FloripaBusService.Tests\FloripaBusService.Tests.csproj", "{096A2E1F-17A8-4160-9141-6562FF3BDCDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloripaBus.Tests", "FloripaBus.Tests\FloripaBus.Tests.csproj", "{4783E18D-4812-43F3-8186-F075F70C285A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CD9F514-6EF2-49CF-8534-E700FC5CE3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD9F514-6EF2-49CF-8534-E700FC5CE3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD9F514-6EF2-49CF-8534-E700FC5CE3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD9F514-6EF2-49CF-8534-E700FC5CE3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{124D64A5-30FD-4121-81F2-22DA051B5961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{124D64A5-30FD-4121-81F2-22DA051B5961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{124D64A5-30FD-4121-81F2-22DA051B5961}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{124D64A5-30FD-4121-81F2-22DA051B5961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{124D64A5-30FD-4121-81F2-22DA051B5961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC7BCD79-29F6-406E-9C2C-6C657DD79905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC7BCD79-29F6-406E-9C2C-6C657DD79905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC7BCD79-29F6-406E-9C2C-6C657DD79905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC7BCD79-29F6-406E-9C2C-6C657DD79905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{096A2E1F-17A8-4160-9141-6562FF3BDCDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096A2E1F-17A8-4160-9141-6562FF3BDCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096A2E1F-17A8-4160-9141-6562FF3BDCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096A2E1F-17A8-4160-9141-6562FF3BDCDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4783E18D-4812-43F3-8186-F075F70C285A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4783E18D-4812-43F3-8186-F075F70C285A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4783E18D-4812-43F3-8186-F075F70C285A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4783E18D-4812-43F3-8186-F075F70C285A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

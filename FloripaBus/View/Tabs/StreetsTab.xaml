@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FloripaBus.View.Tabs.StreetsTab"
+             Title="{Binding Title}">
+
+  <ScrollView Orientation="Vertical">
+    <StackLayout>
+      <ActivityIndicator IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}" HorizontalOptions="Center" VerticalOptions="Start"/>
+      <ListView ItemsSource="{Binding Streets}" HasUnevenRows="true" ItemTapped="StreetTapped" IsVisible="{Binding ShowData}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Padding="10, 10">
+                <Label Text="{Binding Name}" LineBreakMode="WordWrap" FontSize="Medium"></Label>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FloripaBus.View.ListPage"
+             Title="{Binding Title}">
+
+
+  <StackLayout>
+    <SearchBar Placeholder="Enter a street" SearchButtonPressed="SearchButtonPressed"></SearchBar>
+    <Label Text="{Binding Message}"></Label>
+    <ActivityIndicator IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}" HorizontalOptions="Center"/>
+    <ScrollView>
+      <ListView ItemsSource="{Binding Routes}" HasUnevenRows="True" ItemTapped="RouteTapped" IsVisible="{Binding ShowList}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Padding="15, 10">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="StartAndExpand">
+                  <Label Text="{Binding ShortName}" FontAttributes="Bold" LineBreakMode="NoWrap"></Label>
+                  <Label Text="-"></Label>
+                  <Label Text="{Binding LongName}" VerticalOptions="CenterAndExpand" LineBreakMode="MiddleTruncation"></Label>
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </ScrollView>
+  </StackLayout>
+</ContentPage>
